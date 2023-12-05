@@ -18,6 +18,10 @@ jobs:
       # Step 1: run a standard checkout action
       - name: Checkout target repo
         uses: actions/checkout@v3
+        with:
+          # optional: set the branch to checkout,
+          # sync action checks out your 'target_sync_branch' anyway
+          ref: main
 
       # Step 2: run the sync action
       - name: Sync upstream changes

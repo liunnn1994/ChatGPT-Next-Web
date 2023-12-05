@@ -7,7 +7,7 @@
 
 # 部署相关问题
 
-各种部署方式详细教程参考：https://rptzik3toh.feishu.cn/docx/XtrdduHwXoSCGIxeFLlcEPsdn8b
+各种部署方式详细教程参考：<https://rptzik3toh.feishu.cn/docx/XtrdduHwXoSCGIxeFLlcEPsdn8b>
 
 ## 为什么 Docker 部署版本一直提示更新
 
@@ -80,7 +80,7 @@ keepalive_timeout 300;  # 设定keep-alive超时时间为65秒
 
 ## 为什么 docker 部署后出现网络错误？
 
-详见讨论：https://github.com/Yidadaa/ChatGPT-Next-Web/issues/1569
+详见讨论：<https://github.com/Yidadaa/ChatGPT-Next-Web/issues/1569>
 
 # 使用相关问题
 
@@ -109,20 +109,21 @@ API KEY 有问题。余额不足。
 
 为了减少首屏白屏时间，默认启用了分块编译，技术原理见下：
 
-- https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading
-- https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4
-- https://github.com/vercel/next.js/issues/38507
-- https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4
+- <https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading>
+- <https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4>
+- <https://github.com/vercel/next.js/issues/38507>
+- <https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4>
 
 然而 NextJS 的兼容性比较差，在比较老的浏览器上会导致此报错，可以在编译时关闭分块编译。
 
 对于 Vercel 平台，在环境变量中增加 `DISABLE_CHUNK=1`，然后重新部署即可；
-对于自行编译部署的项目，在构建时使用 `DISABLE_CHUNK=1 yarn build` 构建即可；
+对于自行编译部署的项目，在构建时使用 `DISABLE_CHUNK=1 pnpm build` 构建即可；
 对于 Docker 用户，由于 Docker 打包时已经构建完毕，所以暂不支持关闭此特性。
 
 注意，关闭此特性后，用户会在第一次访问网站时加载所有资源，如果用户网络状况较差，可能会引起较长时间的白屏，从而影响用户使用体验，所以自行考虑。
 
 ## 使用时遇到 "NotFoundError: Failed to execute 'removeChild' on 'Node': The node...."
+
 请关闭浏览器自身的自动翻译功能，并关闭所有自动翻译插件。
 
 # 网络服务相关问题
@@ -172,7 +173,7 @@ Vercel 是一个全球化的云平台，旨在帮助开发人员更快地构建�
 
 ## 怎么开通 OpenAI API? 怎么查询 API 余额？
 
-官网地址（需梯子）：https://platform.openai.com/account/usage
+官网地址（需梯子）：<https://platform.openai.com/account/usage>
 有网友搭建了无需梯子的余额查询代理，请询问网友获取。请鉴别来源是否可靠，以免 API Key 泄露。
 
 ## 我新注册的 OpenAI 账号怎么没有 API 余额？
@@ -189,7 +190,7 @@ OpenAI 只接受指定地区的信用卡（中国信用卡无法使用）。一�
 
 ## 如何使用 GPT-4 的 API 访问？
 
-- GPT-4 的 API 访问需要单独申请。到以下地址填写你的信息进入申请队列 waitlist（准备好你的 OpenAI 组织 ID）：https://openai.com/waitlist/gpt-4-api
+- GPT-4 的 API 访问需要单独申请。到以下地址填写你的信息进入申请队列 waitlist（准备好你的 OpenAI 组织 ID）：<https://openai.com/waitlist/gpt-4-api>
   之后等待邮件消息。
 - 开通 ChatGPT Plus 不代表有 GPT-4 权限，两者毫无关系。
 
@@ -211,7 +212,7 @@ OpenAI 只接受指定地区的信用卡（中国信用卡无法使用）。一�
 
 ## API 是怎么计费的？
 
-OpenAI 网站计费说明：https://openai.com/pricing#language-models  
+OpenAI 网站计费说明：<https://openai.com/pricing#language-models>  
 OpenAI 根据 token 数收费，1000 个 token 通常可代表 750 个英文单词，或 500 个汉字。输入（Prompt）和输出（Completion）分别统计费用。  
 |模型|用户输入（Prompt）计费|模型输出（Completion）计费|每次交互最大 token 数|
 |----|----|----|----|
@@ -222,7 +223,7 @@ OpenAI 根据 token 数收费，1000 个 token 通常可代表 750 个英文单�
 
 ## gpt-3.5-turbo 和 gpt3.5-turbo-0301(或者 gpt3.5-turbo-mmdd)模型有什么区别?
 
-官方文档说明：https://platform.openai.com/docs/models/gpt-3-5
+官方文档说明：<https://platform.openai.com/docs/models/gpt-3-5>
 
 - gpt-3.5-turbo 是最新的模型，会不断得到更新。
 - gpt-3.5-turbo-0301 是 3 月 1 日定格的模型快照，不会变化，预期 3 个月后被新快照替代。
