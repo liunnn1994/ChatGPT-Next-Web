@@ -5,6 +5,7 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx simple-git-hooks",
     "dev": "next dev",
     "build": "cross-env BUILD_MODE=standalone next build",
     "start": "next start",
@@ -73,7 +74,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
-    "commit-msg": "commitlint --edit ${1}"
+    "commit-msg": "pnpm commitlint --edit ${1}"
   },
   "config": {
     "commitizen": {
