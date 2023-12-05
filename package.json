@@ -72,7 +72,8 @@
     "webpack": "^5.89.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "commitlint --edit ${1}"
   },
   "config": {
     "commitizen": {
