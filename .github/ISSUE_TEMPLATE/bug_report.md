@@ -1,43 +1,36 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Issue Feedback
+about: Please tell us about the issues you encounter
 title: "[Bug] "
-labels: ''
-assignees: ''
-
+labels: ""
+assignees: ""
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+> If you encounter any problems during the use or setup process, please consult our channel first. Unless it's a bug that can be consistently reproduced or a particularly innovative feature suggestion, please refrain from posting low-quality, meaningless posts in the Issue section.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+> [Click to join the official group chat](https://github.com/liunnn1994/ChatGPT-Next-Web-Plus/discussions)
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Feedback Instructions**
+
+⚠️ Note: Any posts that do not follow this template will be immediately closed. Without the information provided below, we cannot locate your problem.
+
+Please enter an x in the brackets below to indicate that you understand the relevant content.
+
+- [ ] I confirm that I have searched for this feedback issue in the [FAQ](https://github.com/liunnn1994/ChatGPT-Next-Web-Plus/blob/main/docs/faq-cn.md) and did not find an answer;
+- [ ] I confirm that I have searched for this feedback issue in the [Issues](https://github.com/liunnn1994/ChatGPT-Next-Web-Plus/issues) list (including closed ones) and did not find an answer.
+
+**Describe the Issue**
+Please describe the problem you are encountering here.
+
+**Steps to Reproduce**
+Please tell us what actions triggered this issue.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+Please provide console screenshots, screen captures, or server log screenshots here.
 
-**Deployment**
-- [ ] Docker
-- [ ] Vercel
-- [ ] Server
+**Some Necessary Information**
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional Logs**
-Add any logs about the problem here.
+- System: [e.g. windows 10/ macos 12/ linux / android 11 / ios 16]
+- Browser: [e.g. chrome, safari]
+- Version: [Fill in the version number on the settings page]
+- Deployment method: [e.g., docker or server deployment]
