@@ -1,9 +1,5 @@
 {
-  "branches": [
-    "stable",
-    { "name": "beta", "prerelease": true },
-    { "name": "canary", "prerelease": true }
-  ],
+  "branches": ["stable", { "name": "development", "prerelease": true }],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -20,17 +16,16 @@
       }
     ],
     [
-      "@semantic-release/gitlab",
-      {
-        "gitlabUrl": "https://gitlab.navinfo.com/"
-      }
-    ],
-    [
       "@semantic-release/exec",
       {
         "successCmd": "echo success"
       }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [{ "path": "CHANGELOG.md", "label": "Changelog" }]
+      }
     ]
-  ],
-  "extends": "@semantic-release/gitlab-config"
+  ]
 }
