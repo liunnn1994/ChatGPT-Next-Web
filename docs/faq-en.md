@@ -22,7 +22,7 @@ The Docker version is equivalent to the stable version, and the latest Docker is
 ## How to modify Vercel environment variables
 
 - Enter the Vercel console page;
-- Select your chatgpt-next-web project;
+- Select your chatgpt-next-web-plus project;
 - Click on the Settings option at the top of the page;
 - Find the Environment Variables option in the sidebar;
 - Modify the corresponding values as needed.
@@ -66,17 +66,17 @@ Please check and troubleshoot the following issues:
 
 To reduce the initial white screen time, Next.js enables chunking by default. You can find the technical details here:
 
-- https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading
-- https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4
-- https://github.com/vercel/next.js/issues/38507
-- https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4
+- <https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading>
+- <https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4>
+- <https://github.com/vercel/next.js/issues/38507>
+- <https://stackoverflow.com/questions/55993890/how-can-i-disable-chunkcode-splitting-with-webpack4>
 
 However, Next.js has limited compatibility with older browsers, which can result in this error.
 
 You can disable chunking during building.
 
 For Vercel platform, you can add `DISABLE_CHUNK=1` to the environment variables and redeploy.
-For self-deployed projects, you can use `DISABLE_CHUNK=1 yarn build` during the build process.
+For self-deployed projects, you can use `DISABLE_CHUNK=1 pnpm build` during the build process.
 For Docker users, as the build is already completed during packaging, disabling this feature is currently not supported.
 
 Note that when you disable this feature, all resources will be loaded on the user's first visit. This may result in a longer white screen time if the user has a poor network connection, affecting the user experience. Please consider this when making a decision.
@@ -108,7 +108,7 @@ The API KEY is problematic. Insufficient balance.
 
 Due to IP restrictions of OpenAI, China and some other countries/regions cannot directly connect to OpenAI API and need to go through a proxy. You can use a proxy server (forward proxy) or a pre-configured OpenAI API reverse proxy.
 
-- Forward proxy example: VPN ladder. In the case of docker deployment, set the environment variable HTTP_PROXY to your proxy address (http://address:port).
+- Forward proxy example: VPN ladder. In the case of docker deployment, set the environment variable HTTP_PROXY to your proxy address (<http://address:port>).
 - Reverse proxy example: You can use someone else's proxy address or set it up for free through Cloudflare. Set the project environment variable BASE_URL to your proxy address.
 
 ## Can I deploy it on a server in China?
@@ -154,7 +154,7 @@ Go to chat.openai.com to register. You will need:
 
 ## How to activate OpenAI API? How to check API balance?
 
-Official website (requires VPN): https://platform.openai.com/account/usage
+Official website (requires VPN): <https://platform.openai.com/account/usage>
 Some users have set up a proxy to check the balance without a VPN; ask online friends for access. Please verify the source is reliable to avoid API Key leakage.
 
 ## Why doesn't my new OpenAI account have an API balance?
@@ -171,7 +171,7 @@ OpenAI only accepts credit cards from designated regions (Chinese credit cards c
 
 ## How to access the GPT-4 API?
 
-(Updated April 6th) Access to the GPT-4 API requires a separate application. Go to the following address and enter your information to join the waitlist (prepare your OpenAI organization ID): https://openai.com/waitlist/gpt-4-api
+(Updated April 6th) Access to the GPT-4 API requires a separate application. Go to the following address and enter your information to join the waitlist (prepare your OpenAI organization ID): <https://openai.com/waitlist/gpt-4-api>
 Wait for email updates afterwards.
 
 ## How to use the Azure OpenAI interface
