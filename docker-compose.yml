@@ -1,13 +1,14 @@
 version: "3.9"
 services:
-  chatgpt-next-web-plus:
+  chatgpt-next-web:
     profiles: ["no-proxy"]
-    container_name: chatgpt-next-web-plus
-    image: liunnn1994/chatgpt-next-web-plus
+    container_name: chatgpt-next-web
+    image: yidadaa/chatgpt-next-web
     ports:
       - 3000:3000
     environment:
       - OPENAI_API_KEY=$OPENAI_API_KEY
+      - GOOGLE_API_KEY=$GOOGLE_API_KEY
       - CODE=$CODE
       - BASE_URL=$BASE_URL
       - OPENAI_ORG_ID=$OPENAI_ORG_ID
@@ -17,14 +18,15 @@ services:
       - DISABLE_FAST_LINK=$DISABLE_FAST_LINK
       - OPENAI_SB=$OPENAI_SB
 
-  chatgpt-next-web-plus-proxy:
+  chatgpt-next-web-proxy:
     profiles: ["proxy"]
-    container_name: chatgpt-next-web-plus-proxy
-    image: liunnn1994/chatgpt-next-web-plus
+    container_name: chatgpt-next-web-proxy
+    image: yidadaa/chatgpt-next-web
     ports:
       - 3000:3000
     environment:
       - OPENAI_API_KEY=$OPENAI_API_KEY
+      - GOOGLE_API_KEY=$GOOGLE_API_KEY
       - CODE=$CODE
       - PROXY_URL=$PROXY_URL
       - BASE_URL=$BASE_URL
